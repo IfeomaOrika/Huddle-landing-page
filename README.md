@@ -11,7 +11,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Live Site
-
+https://ifyorika.github.io/Huddle-landing-page/
 
 ### Built with
 
