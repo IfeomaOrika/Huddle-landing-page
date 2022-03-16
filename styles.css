@@ -1,0 +1,139 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.illustration__logo {
+    position: relative;
+    top: -3rem;
+    max-width: 12.5rem;
+}
+
+.introductory {
+    max-width: 43%;
+}
+
+.intro__heading {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0rem 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.intro__description {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 2rem 0rem 0rem 2rem;
+    line-height: 1.5;
+}
+
+.intro__socials {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(150px);
+    color: white;
+    gap: 1rem;
+}
+
+i {
+    padding: 0.4rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+i:hover {
+    padding: 0.4rem;
+    border: 2px solid var(--Soft-Magenta);
+    border-radius: 100%;
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+.intro__button-link {
+    display: flex;
+    max-width: 37%;
+    min-height: 3.111rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+    margin-top: 1rem;
+    color: var(--Violet);
+    font-size: 1rem;
+    background-color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.intro__button-link:hover {
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+    color: white;
+}
+
+@media all and (max-width:375px) {
+    .container {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .illustration__logo {
+        max-width: 45%;
+    }
+
+    .illustration__mockup {
+        max-width: 100%;
+    }
+
+    .introductory {
+        max-width: 100%;
+    }
+
+    .intro__heading {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .intro__description {
+        text-align: center;
+    }
+
+    .intro__button {
+        text-align: center;
+    }
+
+    .intro__register {
+        min-width: 85%;
+    }
+
+    .intro__socials {
+        display: flex;
+        justify-content: center;
+        transform: translateY(40px);
+    }
+}
